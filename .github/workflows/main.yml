@@ -24,7 +24,6 @@ jobs:
         run: cd put-function && python test.py -v && cd ..
 
   deploy-infra:
-      needs: test-app
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
@@ -39,9 +38,7 @@ jobs:
             aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws-region: us-east-1
         - run: sam build
-          working-directory: cloud-rc
         - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
-          working-directory: cloud-rc
 
   deploy-site:
     runs-on: ubuntu-latest         
