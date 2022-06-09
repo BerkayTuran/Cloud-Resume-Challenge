@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+           name="viewport"
+           content="width=device-width, initial-scale=1, shrink-to-fit=no"
+         />
+        <title>Berkay Turan</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', sans-serif;
+            }
+            body
+            {
+                background-color: lightblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            .container
+            {
+                position: relative;
+                width: 100%;
+                max-width: 1000px;
+                min-height: 1000px;
+                margin: 50px;
+                background: #fff;
+                display: grid;
+                grid-template-columns: 1fr 2fr;                 /*Izgara şeklinde hizalamamızı sağlar*/
+                box-shadow: 0px 35px 55px rgba(0,0,0,0.3);
+            }
+            .container2
+            {
+                position: relative;
+                width: 100px;
+                height: 100px;
+                margin: 50px;
+                background-color: #2a7da2;
+                display: grid;
+                box-shadow: 0px 35px 55px rgba(0,0,0,0.3);
+            }
+            .container .left_Side
+            {
+                position: relative;
+                background: #003147;
+                padding: 40px;
+                
+            }
+            .profileText
+            {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+            }
+            .profileText .imgBx
+            {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .profileText .imgBx img
+            {
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .profileText h2
+            {
+                color:#fff;
+                font-size: 1.6em;
+                margin-top: 20px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 600;
+                line-height: 1.4em;
+            }
+            .profileText h2 span
+            {
+                font-size: 0.8em;
+                font-weight: 300;
+            }
+            .contactInfo
+            {
+                padding-top: 40px;
+
+            }
+            .title
+            {
+                color:#fff;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+            }
+            .contactInfo ul
+            {
+                position: relative;
+
+            }   
+            .contactInfo ul li
+            {
+                position: relative;
+                list-style: none;
+                margin: 10px 0;
+                cursor: pointer;
+            }
+            .contactInfo ul li .icon
+            {
+                display: inline-block;
+                width: 30px;
+                font-size: 18px;
+
+            } 
+            .contactInfo ul li span
+            {
+                color:#fff;
+                font-weight: 300;
+            }       
+            .contactInfo.education li
+            {
+                margin-bottom: 15px;
+            }
+            .contactInfo.education h5
+            {
+                color: #03a9f4;
+                font-weight: 500;
+            }
+            .contactInfo.education h4:nth-child(2)
+            {
+                color: #fff;
+                font-weight: 500;
+            }
+            .contactInfo.education h4
+            {
+                color: #fff;
+                font-weight: 300;
+            }
+            .contactInfo.language .percent
+            {
+                position:relative;
+                width: 100%;
+                height: 6px;
+            }
+            .container .right_Side
+            {
+                position: relative; 
+                background: #dededf;
+                padding: 40px;
+            }
+            .about
+            {
+                margin-bottom: 50px;
+            }
+            .about:last-child
+            {
+                margin-bottom: 0;
+            }
+            .title2
+            {
+                color: #003147;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+            p
+            {
+                color: #333;
+            }
+            .about .box
+            {
+                display: flex;
+                flex-direction: row;
+                margin: 20px 0;
+            }
+            .about .box .year_company
+            {
+                min-width: 150px;
+            } 
+            .about .box .year_company h5
+            {
+                text-transform: uppercase;
+                color: #848c90;
+                font-weight: 600;
+            }
+            .about .box .text h4
+            {
+                text-transform: uppercase;
+                color:#2a7da2;
+                font-size: 16px;
+            }
+            .skills .box
+            {
+                position: relative;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 150px 1fr;
+                justify-content: center;
+                align-items: center;
+            }
+            .skills .box h4
+            {
+                text-transform: uppercase;
+                color: #848c99;
+                font-weight: 500;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left_Side">
+                <div class="profileText">
+                    <div class="imgBx">
+                    </div>
+                    <h2>Berkay Turan<br><span>Penetration Tester</span></h2>
+                </div>
+                <div class="contactInfo">
+                    <h3 class="title">Contact Info</h3>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="text">+90 532 495 2879</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span class="text">berkay@berkayturan.com</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                            <span class="text">berkayturan.com</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+                            <span class="text">github.com/BerkayTuran/</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                            <span class="text">linkedin.com/in/berkayturanz/</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></span>
+                            <span class="text">Istanbul, Turkey</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contactInfo education">
+                    <h3 class="title">Education</h3>
+                    <ul>
+                        <li>
+                           <h5>2020 - 2022</h5>
+                           <h4>Associate Degree in Information Security Technology</h4>
+                           <h4>Dogus University</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contactInfo language">
+                    <h3 class="title">Languages</h3>
+                    <ul>
+                        <li>
+                            <span class="text">English</span>
+                            <span class="percent"></span>
+                        </li>
+                        <li>
+                            <span class="text">German</span>
+                            <span class="percent"></span>
+                        </li>
+                        <li>
+                            <span class="text">Turkish</span>
+                            <span class="percent"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <script>
+                         visitorCount = document.getElementById('visitorCount');
+                         fetch('https://zyuqgu3iok.execute-api.us-east-1.amazonaws.com/Prod/put')
+                           .then(() => fetch('https://zyuqgu3iok.execute-api.us-east-1.amazonaws.com/Prod/get'))
+                           .then(response => response.json())
+                           .then(data => document.getElementById('clicks').innerHTML = (data))
+                           console.log(err);
+                    </script>      
+                        <h3>Visitors:</h3>
+                        <h2 class="title" id="clicks"></h2>
+                </div>
+            </div>
+            <div class="right_Side">
+                <div class="about">
+                    <h2 class="title2">Summary</h2>
+                    <p>Learning new technologies and trying to find optimized solutions for problems. Eager to grasp new
+                        skills and concepts quickly.<br><br>Experienced in web vulnerabilities, threat modeling, penetration testing,
+                        cyber attack measures.</p>
+                </div>
+                <div class="about">
+                    <h2 class="title2">Experience</h2>
+                    <div class="box">
+                        <div class="year_company">
+                            <h5>06.2019 - 07.2019</h5>
+                            <h5>BELBİM ELEKTRONİK PARA VE ÖDEME HİZMETLERİ A.Ş.</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Testing And Documentation Intern</h4>
+                            <p>Carried out day-day-day duties accurately and efficiently. Improved operations through consistent hard work and dedication. During the internship, important projects were contributed. The necessary steps and controls for the test were made.</p>
+                        </div>
+                    </div>
+                    <div class="about skills">
+                        <h2 class="title2">Professional Skills</h2>
+                        <div class="box">
+                            <h4>Web vulnerabilities</h4>
+                        </div>
+                        <div class="box">
+                            <h4>Python Scripting</h4>
+                        </div>
+                        <div class="box">
+                            <h4>Cryptography</h4>
+                        </div>
+                        <div class="box">
+                            <h4>Database and Management Systems</h4>
+                        </div>
+                        <div class="box">
+                            <h4>Cloud Engineering</h4>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
